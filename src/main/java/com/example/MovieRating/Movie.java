@@ -1,0 +1,52 @@
+package com.example.MovieRating;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+
+
+@Entity
+public class Movie {
+
+    @Id
+	private String movieId;
+	private String name;
+	
+	public Movie() {
+		
+	}
+
+	
+	public Movie(String movieId, String name) {
+		super();
+		this.movieId = movieId;
+		this.name = name;
+	}
+
+
+	public String getMovieId() {
+		return movieId;
+	}
+
+	public void setMovieId(String movieId) {
+		this.movieId = movieId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	
+
+
+	
+
+	
+	
+	
+}
